@@ -1,0 +1,120 @@
+/*body: Styles for the entire webpage's body*/
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(2, 98, 2, 0.874);
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    font-size: 1.5rem;
+}
+/*
+.textContainer: Styles for the container holding the text input. height,
+width: Sets the container's height to 15% and width to 90% of the viewport width.
+background: Sets the background color of the container. 
+border-radius: Adds rounded corners to the container. 
+outline: Removes any outline (focus) styling. 
+padding: Adds internal spacing to the container's content.
+ overflow-y: Enables vertical scrolling if content overflows. 
+ display: Sets the display type as flex for flexible layout. 
+ flex-direction: Places flex items in a column layout,
+with the content aligned to the bottom.
+*/
+.textContainer {
+    height: 15vh;
+    width: 90vw;
+    background: rgb(234, 204, 34);
+    border-radius: 0.5rem;
+    outline: none;
+    padding: 2rem;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column-reverse;
+}
+/*
+.keyboard: Styles for the virtual keyboard container. 
+display: Sets the display type as flex for flexible layout. 
+flex-direction: Places flex items in a column layout. 
+justify-content: Distributes space evenly between keyboard rows. 
+height: Sets the keyboard's height to 50% of the viewport height.
+width: Sets the keyboard's width to 70% of the viewport width.
+background-color: Sets the background color of the keyboard. 
+border-radius: Adds rounded corners to the keyboard container.
+*/
+.keyboard {
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+height: 50vh;
+width: 70vw;
+background-color: rgb(227, 214, 74);
+border-radius: 1rem;
+}
+/*
+row: Styles for a row of keys within the virtual keyboard. 
+display: Sets the display type as flex for flexible layout. 
+justify-content: Distributes space evenly between keys within the row. 
+align-items: Aligns keys vertically at the center.
+*/
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/*
+last: Styles specifically for the last row of keys. width: Sets the width of the last row to 65% of its container's width.
+ margin: Sets margin horizontally to auto,
+which centers the row within its container.
+*/
+.last {
+    width: 65%;
+    margin: 0 auto;
+}
+/* 
+space: Styles for the space key within the keyboard. 
+background: Sets the background color of the space key. 
+width: Sets the width of the space key to 50% of its container's width.
+height: Sets the height of the space key.
+*/
+.space {
+    background: rgb(171,171,2);
+    width: 50%;
+    height: 2rem;
+}
+/*
+key: Styles for the individual keys within the keyboard. 
+cursor: Sets the cursor appearance to a pointer when hovering over the key. 
+padding: Adds internal spacing within the key element. 
+border-radius: Adds rounded corners to the keys.
+*/
+.key {
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 3px;
+}
+/*
+key:active: Styles applied to a key when it is in an active (pressed) state. 
+background: Changes the background color of the key when active.
+*/
+.key:active {
+    background: rgb(16, 16, 5);
+}
+/*
+active: Styles applied to elements that have the class "active" . 
+background-color: Changes the background color of the element with this class.
+*/
+.active {
+    background-color: rgb(153, 153, 4);
+}
+
+
+
+
+
+
+
+
