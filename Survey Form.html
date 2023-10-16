@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Survey Form.css">
+    <title>Survey Form</title>
+</head>
+<body>
+  <div>
+  <h1 id="title" class="text-center">Customer Survey Form</h1> 
+  <p id="description" class="text-center">Please help us to get improve our service, fill the survey form.</p> 
+  </div>
+  <form id="survey-form" class="text-center">
+    <div class="form-group">
+    <label id="name-label">Name<input type="text" id="name" placeholder="Name" required></label>
+    <label id="email-label">Email<input type="email" id="email" placeholder="Enter your email" required></label>
+    <label id="number-label">Age (optional)<input id="number" type="number" placeholder="Age" min="13" max="99" style="width: 100px;"></label>
+    </div>
+    <div class="form-group">
+    <label for="">
+    <p>Wich option best describes your current situation</p>
+    <select name="" id="dropdown">
+      <option value="1" >Student</option>
+      <option value="2" >Employed</option>
+      <option value="3" >Unemployed</option>
+      <option value="4" >Other</option>
+    </select>
+    </label>
+    </div>
+    <div class="form-group"> 
+      <p>From 0 to 100 Would you recommend a course of programming on freeCodeCamp?</p>
+    <label for=""><input type="radio" name="number" value="number">50 to 100</label>
+    <label for=""><input type="radio" name="number" value="number">0 to 50</label>
+    <label for=""><input type="radio" name="number" value="number">not sure</label>
+    </div>
+    <div class="text-center">
+      <p>What is your preferable feature of learning code</p>
+      <select name="" id="">
+      <option value="">Challenges</option>
+      <option value="">Projects</option>
+      <option value="">Other</option>
+      </select>
+    </div>
+<div class="form-group">
+  <p>Which area of Tech would you like to learn?</p>
+  <label for=""><input type="checkbox" name="Front-end Projects" value="Front-end Projects">Front-end Projects
+</label>
+  <label for=""><input type="checkbox" name="Back-end Projects" value="Back-end Projects">Back-end Projects</label>
+  <label for=""><input type="checkbox" name="Data Visualization" value="Data Visualization">Data Visualization</label>
+  <label for=""><input type="checkbox" name="Git and GitHub" value="Git and GitHub">Git and GitHub</label>
+  <label for=""><input type="checkbox" name="Java Script" value="Java Script">Java Script</label>
+  <label for=""><input type="checkbox" name="Python" value="Python">Python</label>
+  <label for=""><input type="checkbox" name="C+" value="C+">C+</label>
+  <label for=""><input type="checkbox" name="Other" value="Other">Other</label>
+</div>
+
+<div class="form-group">
+  <p>Write your opinion here</p>
+  <label for=""><textarea name="" id="" cols="30" rows="10"></textarea></label>
+</div>
+<button id="submit" class="text-center">Submit</button>
+
+
+  </form>
+</body>
+<footer>This project was carried out through <a href="https://www.freecodecamp.org"> freeCodeCamp</a> challenges, with
+  some changes.</footer>
+</html>
+
